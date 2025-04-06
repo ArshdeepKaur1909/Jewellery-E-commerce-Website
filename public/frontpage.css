@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #9D9689
+}
+.navbar{
+  width: 100vw;
+  height: max-content;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  background-color: #9D9689;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar p{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 80px;
+  font-weight: 900;
+  font-style: normal;
+}
+.navbar div{
+    margin: 100px 50px;
+    font-size: 60px;
+    display: flex;
+    gap: 100px;
+}
+.navbar div a{
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.navbar div a:hover{
+  color: #D81B60;
+}
+.mainbar{
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #9D9689;
+}
+.one{
+    width: 100vw;
+    height: 100vh;
+    padding: 300px 100px;
+    background-image: url("./mainPagePic.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.one p{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 150px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.one button{
+   padding: 12px 24px; 
+   border: none; 
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   background-color: #9D9689;
+   color: black; 
+   font-size: 50px; 
+   font-weight: 600;
+   font-family: 'Montserrat', serif;
+   cursor: pointer; 
+   transition: all 0.3s ease;
+   position: relative;
+   right: 400px;
+}
+.one button:hover{
+  color: antiquewhite;
+  background-color: black;
+  border-color: black;
+}
+.two{
+  margin: 100px 50px;
+  width: 100%;
+  height: max-content;
+}
+ h1{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 200px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.collection{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card{
+  width: 75rem;
+  margin: 50px 35px;
+  border: none;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+.card:hover{
+  box-shadow: 50px 50px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); 
+}
+.card img{
+  height: 100rem;
+}
+.card p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 90px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.card a, .btn{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.card i{
+  position: relative;
+  left: 50rem;
+}
+.card i:hover{
+  color: #D81B60;
+}
+.mb-3{
+  border: 3px solid #494848;
+  border-radius: 70px;
+}
+.newsletter{
+  width: 100vw;
+  height: 700px;
+  margin: 100px 0px;
+  padding: 150px 100px;
+  color: antiquewhite;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.newsletter p, h5{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.footer{
+  height: max-content;
+  width: 100%;
+  margin: 300px 0px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.section{
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 75px;
+}
