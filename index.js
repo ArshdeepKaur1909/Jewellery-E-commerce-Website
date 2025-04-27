@@ -19,6 +19,9 @@ app.get("/Bracelet", (req, res) => {
 app.get("/shopping-cart", (req, res) => {
   res.render("cart.ejs");
 });
+app.post("/productDescription", (req, res) => {
+  res.render("product.ejs");
+});
 app.listen(8080, () => {
     console.log("Listening Started");
 });

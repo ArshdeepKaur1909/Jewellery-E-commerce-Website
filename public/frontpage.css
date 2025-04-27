@@ -110,6 +110,7 @@ body{
 }
 .card{
   width: 75rem;
+  height: max-content;
   margin: 50px 35px;
   border: none;
   box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.02);

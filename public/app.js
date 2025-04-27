@@ -1,6 +1,5 @@
 // Selecting all shopping carts icons
-let addToCart = document.querySelectorAll(".addToCart");
-console.dir(addToCart); 
+let addToCart = document.querySelectorAll(".addToCart"); 
 
 // Applying event listener to each icon --> using click event listener --> this only works in normal function
 for(let i = 0; i<addToCart.length; i++){
@@ -28,3 +27,14 @@ for(let i = 0; i<addToCart.length; i++){
     alert("Product is added to cart");
   })
 }
+
+//Selecting images of each card of collection div
+let images = document.querySelectorAll(".card-img-top");
+
+// Applying event listener to each image
+images.forEach(function(image){
+   image.addEventListener("click", function(){
+     let form = this.closest("form");
+     form.submit();
+   })
+});
