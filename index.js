@@ -19,8 +19,9 @@ app.get("/Bracelet", (req, res) => {
 app.get("/shopping-cart", (req, res) => {
   res.render("cart.ejs");
 });
-app.post("/productDescription", (req, res) => {
-  res.render("product.ejs");
+app.get("/productDescription", (req, res) => {
+  let {name, price, img} = req.query;
+  res.render("product.ejs", {name, price, img});
 });
 app.listen(8080, () => {
     console.log("Listening Started");

@@ -36,14 +36,14 @@ images.forEach(function(image){
    image.addEventListener("click", function(){
     let card = this.closest(".card"); 
 
-    let image =   card.querySelector("img"); // card.children[0] ;
     let p1 = card.children[1].children[0];
     let p2 = card.children[1].children[1];
 
-    let src = image.src;
-    let name = p1.innerText;
-    let price = p2.firstChild.textContent;
+    let src = encodeURIComponent(image.getAttribute('src'));
+    let name = encodeURIComponent(p1.innerText);
+    let price = encodeURIComponent(p2.firstChild.textContent);
 
+    window.location.href = `/productDescription?name=${name}&price=${price}&img=${src}`;
     
    })
 });
