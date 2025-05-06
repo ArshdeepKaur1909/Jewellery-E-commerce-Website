@@ -121,7 +121,8 @@ body{
   transform: translateY(-2px); 
 }
 .card img{
-  height: 100rem;
+  height: 80rem;
+  object-fit: cover;
 }
 .card p{
     font-family: "Roboto Condensed", sans-serif;
